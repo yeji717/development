@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     const pos1 = $('#s1').offset().top;
     const pos2 = $('#s2').offset().top;
-    const pos3 = $('#s3').offset().top;
+    // const pos3 = $('#s3').offset().top;
     const pos4 = $('#s4').offset().top;
     const pos5 = $('#s5').offset().top;
 
@@ -31,26 +31,26 @@ $(document).ready(function () {
 
             // $('.menu').removeClass('on');
         }
-        if (scroll >= pos2 && scroll < pos3) {
+        if (scroll >= pos2 && scroll < pos4) {
             $('#navi>li').eq(1).children('a').addClass('on');
 
             $('section').eq(2).removeClass('on');
 
             // $('.menu').addClass('on');
         }
-        if (scroll >= pos3 && scroll < pos4) {
-            $('#navi>li').eq(2).children('a').addClass('on');
+        // if (scroll >= pos3 && scroll < pos4) {
+        //     $('#navi>li').eq(2).children('a').addClass('on');
 
-            $('section').eq(2).addClass('on');
-            $('section').eq(3).removeClass('on');
+        //     $('section').eq(2).addClass('on');
+        //     $('section').eq(3).removeClass('on');
 
-            // $('.menu').removeClass('on');
-        }
+
+        // }
         if (scroll >= pos4 && scroll < pos5) {
             $('#navi>li').eq(3).children('a').addClass('on');
 
-            $('section').eq(3).addClass('on');
-            $('section').eq(2).removeClass('on');
+            // $('section').eq(3).addClass('on');
+            // $('section').eq(2).removeClass('on');
             $('section').eq(4).removeClass('on');
 
             // $('.menu').addClass('on');
@@ -59,7 +59,7 @@ $(document).ready(function () {
             $('#navi>li').eq(4).children('a').addClass('on');
 
             $('section').eq(4).addClass('on');
-            $('section').eq(3).removeClass('on');
+            // $('section').eq(3).removeClass('on');
 
             // $('.menu').removeClass('on');
             $('.s5_box_inner').addClass('on');
