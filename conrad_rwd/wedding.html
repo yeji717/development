@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/header.js"></script>
+    <link rel="stylesheet" href="./css/wedding.css">
+    <script src="https://kit.fontawesome.com/d841d98aaf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#header">전체 메뉴 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <div id="wrap">   
+        <div id="moPanel">
+            <ul id="moGnb">
+                <li>
+                    <a href="#">ROOMS</a>
+                    <ul class="sub">
+                        <li><a href="#">DELUXE</a></li>
+                        <li><a href="#">PREMIUM</a></li>
+                        <li><a href="#">QUEEN CORNER PREMIUM</a></li>
+                        <li><a href="#">EXECUTIVE</a></li>
+                        <li><a href="#">GRAND KING CORNER SUITE</a></li>
+                        <li><a href="#">GRAND KING EXECUTIVE SUITE</a></li>
+                        <li><a href="#">THE CONRAD SUITE</a></li>
+                        <li><a href="#">THE PENTHOUSE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">FOOD &amp; BEVERAGE</a>
+                    <ul class="sub">
+                        <li><a href="#">ATRIO</a></li>
+                        <li><a href="#">ZEST</a></li>
+                        <li><a href="#">37 GRILL &amp; BAR</a></li>
+                        <li><a href="#">VVERTIGO</a></li>
+                        <li><a href="#">THE NOODLE BAR</a></li>
+                        <li><a href="#">FLAMES</a></li>
+                        <li><a href="#">10G</a></li>
+                        <li><a href="#">EXECUTIVE LOUNGE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">WEDDING</a>
+                </li>
+                <li>
+                    <a href="#">MEETING &amp; CONFERENCE</a>
+                    <ul class="sub">
+                        <li><a href="#">GRAND BALLROOM</a></li>
+                        <li><a href="#">PARK BALLROOM</a></li>
+                        <li><a href="#">THE STUDIO</a></li>
+                        <li><a href="#">BOARDROOM</a></li>
+                        <li><a href="#">CAPACITY CHART</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">FITNESS &amp; SPA</a>
+                </li>
+                <li>
+                    <a href="#">PROMOTION &amp; NEWS</a>
+                    <ul class="sub">
+                        <li><a href="#">ROOMS</a></li>
+                        <li><a href="#">RESTAURANT</a></li>
+                        <li><a href="#">NEWS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">GALLERY</a>
+                </li>
+            </ul>
+            <a href="#" class="btn">
+                <span></span>
+            </a>
+        </div>
+        <header>
+            <div class="headerWrap">
+                <nav class="info">
+                    <ul class="after">
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li>
+                            <a href="#" class="ko">Korean<i class="fas fa-chevron-down"></i></a>
+                            <ul class="list">
+                                <li><a href="#">english</a></li>
+                            </ul>
+                        </li>       
+                    </ul>
+                </nav>
+                <h1 class="logo">
+                    <img src="./img/main_logo.png" alt="콘래드서울">
+                </h1>
+                <div id="header" class="after">
+                    <div class="menu after">
+                        <h2 class="ir_su">전체 메뉴</h2>
+                        <nav class="gnb">
+                            <ul class="mainmenu after">
+                                <li><a href="#" onmouseover="this.innerHTML='객실'" onmouseout="this.innerHTML='ROOMS'">ROOMS</a>
+                                    <ul class="submenu">
+                                        <li><a href="#" onmouseover="this.innerHTML='디럭스'" onmouseout="this.innerHTML='DELUXE'">DELUXE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='프리미엄'" onmouseout="this.innerHTML='PREMIUM'">PREMIUM</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='퀸 코너 프리미엄'" onmouseout="this.innerHTML='QUEEN CORNER PREMIUM'">QUEEN CORNER PREMIUM</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='이그제큐티브'" onmouseout="this.innerHTML='EXECUTIVE'">EXECUTIVE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='그랜드 킹 코너 스위트'" onmouseout="this.innerHTML='GRAND KING CORNER SUITE'">GRAND KING CORNER SUITE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='그랜드 킹 이그제큐티브 스위트'" onmouseout="this.innerHTML='GRAND KING EXECUTIVE SUITE'">GRAND KING EXECUTIVE SUITE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='더 콘래드 스위트'" onmouseout="this.innerHTML='THE CONRAD SUITE'">THE CONRAD SUITE</a></li>
+                                        <li><a href="#" onmouseover="this.innerHTML='더 펜트하우스'" onmouseout="this.innerHTML='THE PENTHOUSE'">THE PENTHOUSE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">FOOD</a>
+                                    <!-- <div class="submenu"> -->
+                                    <ul class="submenu">
+                                        <li><a href="#" onmouseover="this.innerHTML='아트리오'" onmouseout="this.innerHTML='ATRIO'">ATRIO</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='제스트'" onmouseout="this.innerHTML='ZEST'">ZEST</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='37 그릴 바'" onmouseout="this.innerHTML='37 GRILL BAR'">37 GRILL &amp; BAR</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='버티고'" onmouseout="this.innerHTML='VVERTIGO'">VVERTIGO</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='더 누들 바'" onmouseout="this.innerHTML='THE NOODLE BAR'">THE NOODLE BAR</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='프레임즈'" onmouseout="this.innerHTML='FLAMES'">FLAMES</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='텐쥐'" onmouseout="this.innerHTML='10G'">10G</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='이그제큐티브 라운지'" onmouseout="this.innerHTML='EXECUTIVE LOUNGE'">EXECUTIVE LOUNGE</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </li>
+                                <li><a href="wedding.html">WEDDING</a></li>
+                                <li><a href="#">MEETING</a>
+                                    <!-- <div class="submenu"> -->
+                                    <ul class="submenu">
+                                        <li><a href="#"  onmouseover="this.innerHTML='그랜드 볼룸'" onmouseout="this.innerHTML='GRAND BALLROOM'">GRAND BALLROOM</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='파크 볼룸'" onmouseout="this.innerHTML='PARK BALLROOM'">PARK BALLROOM</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='더스튜디오'" onmouseout="this.innerHTML='THE STUDIO'">THE STUDIO</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='보드룸'" onmouseout="this.innerHTML='BOARDROOM'">BOARDROOM</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='캐퍼시티 차트'" onmouseout="this.innerHTML='CAPACITY CHART'">CAPACITY CHART</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </li>
+                                <li><a href="#">FITNESS &amp; SPA</a></li>
+                                <li><a href="#">PROMOTION</a>
+                                    <!-- <div class="submenu"> -->
+                                    <ul class="submenu">
+                                        <li><a href="#"  onmouseover="this.innerHTML='객실'" onmouseout="this.innerHTML='ROOMS'">ROOMS</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='식음료'" onmouseout="this.innerHTML='RESTAURANT'">RESTAURANT</a></li>
+                                        <li><a href="#"  onmouseover="this.innerHTML='뉴스'" onmouseout="this.innerHTML='NEWS'">NEWS</a></li>
+                                    </ul>
+                                    <!-- </div> -->
+                                </li>
+                                <li><a href="#">GALLERY</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- <div class="m_logo">Conrad Seoul</div> -->
+            
+           
+        </header>
+        <main id="content">
+            <div class="main_bg">
+                <h2 class="hide">메인배너</h2>
+                <!-- <span class="title">W E D D I N G</span> -->
+            </div>
+            <section class="about">
+                <h2>ABOUT</h2>
+                <p>콘래드 서울의 웨딩 연회장에서 행복한 그 순간을 느껴보시기 바랍니다. <br> 당신의 가장 소중한 추억이 되는 이 장소에서 콘래드 서울 전문 플래너들의 세심한 배려와 서비스를 느낄
+                    수
+                    있습니다.
+                    <br>
+
+                    콘래드 서울에서는 고품격의 즐겁고 화려한 결혼식을 올릴 수 있습니다. <br> 콘래드 서울의 상징인 나선형의 '천국에 이르는 계단'과 함께 웨딩을 위한 전용층이 따로 마련되어
+                    있습니다.
+                    <br>
+
+                    다양한 웨딩 스타일을 선택할 수 있으며, <br> 웨딩 플래너의 도움을 받아 고객의 스타일로 디자인해드립니다. <br> 콘래드 서울의 전문적인 전담 플래너에게 맡기시면, <br> 고객을 위해
+                    기획에서
+                    진행까지
+                    원활하게 모든 것을 준비해 드립니다. <br> 콘래드 서울은 최선을 다해 고객을 위한 완벽한 웨딩을 선사합니다.</p>
+            </section>
+            <section class="hall">
+                <h2>WEDDING HALL</h2>
+                <div class="box5 after">
+                    <div class="hall1">
+                        <div class="text">
+                            <span>Grand Bloom</span>
+                            <a href="#">더보기</a>
+                        </div>
+                    </div>
+                    <div class="hall2">
+                        <div class="text">
+                            <span>Park Bloom</span>
+                            <a href="#">더보기</a>
+                        </div>
+                    </div>
+                    <div class="hall3">
+                        <div class="text">
+                            <span>Studio Bloom</span>
+                            <a href="#">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="style">
+                <h2>STYLE</h2>
+                <div class="box2">
+                    <div class="left">
+                        <div class="right">
+                            <h2>S T Y L E</h2>
+                            <p>
+                                <span>
+                                콘래드 서울 웨딩은 고객 중심의 럭셔리를 추구하며, <br>
+                                고객 개개인의 높은 안목에  부합하는 세련된 웨딩을 선보이고 있습니다.  <br>
+                                콘래드 서울 웨딩은 최고의 럭셔리 힐튼 브랜드 위상에 맞는 웨딩 데코레이션을 국제적인 전문가들과 함께하고 있습니다. <br>
+                                </span>
+                                수많은 웨딩을 성공적으로 이끌어온 웨딩 전문 플래너들과 함께 생애 최고의 아름다운 날을 만들어 보세요.
+                                
+                            </p>
+                            <span><a href="#">1:1 웨딩 문의하기</a></span>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <section class="food">
+                <h2>FOOD</h2>
+                <div class="box3 after">
+                    <div class="f1"></div>
+                    <div class="f2"></div>
+                </div>
+                <p>혼주의 정성을 그대로 담은 품격 있는 웨딩 메뉴를 선보입니다. <br> 호텔의 전문 주방장과 별도의 미팅을 통해 원하는 메뉴를 직접 스타일링 할 수도 있습니다.</p>
+            </section>
+            <section class="promotion">
+                <h2>PROMOTION</h2>
+                <div class="pro">
+                    <p>꿈이 현실이 되는 그날, 콘래드 웨딩이 잊지 못할 하루를 만들어드립니다. <br>
+
+                    
+                        소중한 하객을 배려한 특별 웨딩 메뉴를 비롯, 최고의 첫날밤을 만들어드릴 콘래드 서울의 허니문 스위트룸을 제공하고 <br>
+                        
+                        
+                        전 세계 곳곳에 5,000여 개의 호텔을 보유한 총 14개의 힐튼 브랜드에서 사용 가능한 힐튼 아너스 (Hilton Honors) 포인트를 적립해 드립니다.</p>
+                </div>
+                
+            </section>
+        </main>
+        <footer id="footer">
+            <ul>
+                <li><a href="#">SITE MAP</a></li>
+                <li><a href="#">RECRUIT</a></li>
+                <li><a href="#">CORPORATE RESPONSIBILITY</a></li>
+                <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">CONRAD HOTELS AND RESORTS</a></li>
+            </ul>
+            <ul>
+                <li>서울특별시 영등포구 10(여의도동) 07326 콘래드 서울</li>
+                <li>Tel.02.6137.7000</li>
+                <li>Fax. 02.6137.7001</li>
+                <li>대표 Stuart Mercier</li>
+                <li>사업자등록번호 104-81-94925</li>
+                <li>통신판매업신고번호 2012-서울영등포-1328호</li>
+                <li>Copyright &copy; All Rights Reserved.</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
