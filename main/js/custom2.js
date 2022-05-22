@@ -151,13 +151,13 @@ $(document).ready(function () {
 
     // 마우스 커서 이동시 따라다니는 예시 이미지
 
-    let image = $('.work_box');
+    // let image = $('.work_box');
 
-    document.addEventListener("mousemove",(e)=>{
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        image.css("left",mouseX+'px');
-        image.css("top",mouseY+'px');
-    });
+    // document.addEventListener("mousemove",(e)=>{
+    //     const mouseX = e.clientX;
+    //     const mouseY = e.clientY;
+    //     image.css("left",mouseX+'px');
+    //     image.css("top",mouseY+'px');
+    // });
 
 })
