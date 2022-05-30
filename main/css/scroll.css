@@ -95,6 +95,7 @@ header .hamburger {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Sen', sans-serif;
 }
 
 /* 추가 */
@@ -111,32 +112,8 @@ section:nth-of-type(2n) {
     background: #000;
 }
 
-.s1 {
-    /* position: relative; */
-    /* background:#dcdcdc; */
-
-}
-
-.s2 {
-    /* position: relative; */
-
-    /* background: #000; */
-}
-
-.s3 {
-
-    /* background: #dcdcdc; */
-}
-
-.s4 {
-
-    /* background: #000; */
-    overflow: hidden;
-}
-
 section h2 {
     width:75vw;
-    /* width: 1200px; */
     margin: 0 auto;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -150,43 +127,22 @@ section:nth-of-type(odd) h2 {
 
 .container {
     width:35vw;
-    /* width: 550px; */
     margin: 0 auto;
     padding-top: 60px;
-    /* margin: 40px auto 0; */
-    /* overflow:hidden; */
-    font-family: 'Sen', sans-serif;
 }
 
-.container2 {
-    /* width: 800px;
-    margin: 0 auto; */
-    /* overflow:hidden; */
-    font-family: 'Sen', sans-serif;
-}
+
 
 #s1 .box span {
     display: inline-block;
     width: 100%;
     font-size: 8.7vw;
-    /* font-size:15em; */
-    /* font-size: 153px; */
     font-weight: bold;
     transition: 0.5s;
 }
 
-
-.title1 {
-    /* transform:translateX(0); */
-
-}
-
-span:nth-child(2n) {
+.title2{
     text-align: right;
-}
-
-.title4 {
-    /* transform:translateX(-200px); */
 }
 
 .heart {
@@ -240,7 +196,6 @@ span:nth-child(2n) {
 
 .heart .line1 {
     transform: translateX(-50%) rotate(90deg);
-
     bottom: 22%;
     left: 52%;
 }
@@ -258,13 +213,14 @@ span:nth-child(2n) {
     bottom: 29%;
 }
 
-.s2 {}
+/* .s2 {} */
 
 .flex_box {
     height: calc(100vh - 79.6px);
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
+    flex-direction: row;
 }
 
 .work_list {
@@ -402,6 +358,189 @@ span:nth-child(2n) {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 
+}
+
+/* s3 */
+
+.study{
+    font-family: 'Poppins', sans-serif;
+}
+
+.study>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-btn{
+    margin-bottom:70px;
+}
+
+.card-btn .one{
+    width:150px;
+    height:60px;
+}
+
+.card-btn .one a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    border-radius: 50px;
+    background-color: purple;
+}
+
+.card-btn .one a span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+.card-btn .one.on a span{
+    left: inherit;
+    transform: translate(185%,-50%);
+}
+
+.card_container{
+    width:300px;
+    height:440px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card_container>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+.front.on{
+    transform: rotateY(180deg);
+}
+
+.front.on img{
+    display: none;
+}
+
+.back.on{
+    transform: rotateY(0deg);
+}
+
+.back.on .weather-img img{
+    display: block;
+}
+
+.front {
+    position: relative;
+    height:100%;
+    text-align:center;
+    backface-visibility: hidden;
+    background-color: #fff;
+}
+
+.front img{
+    
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35%);
+    top: -13%;
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+    position: absolute;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+.back .clock{
+    font-size: 2rem;
+}
+
+.weather-img li {
+    display: none;
+    position: absolute;
+    top:-20%;
+    width:200px;
+    right:-20%;
+}
+
+.weather-img li img {
+    display: none;
+    position: absolute;
+    top:-20%;
+    width:200px;
+    right:-20%;
+}
+
+.weather-img li.on{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+#login-form input{
+    border-radius: 20px 0 0 20px;
+    padding: 12px 20px;
+    border: none;
+    background: #d9d9d9;
+}
+
+#login-form button{
+    border-radius: 0 20px 20px 0;
+    background: #B4C0EB;
+    padding: 12px 20px;
+    margin-left: -4px;
+}
+
+#greeting{
+    font-size:2rem;
+}
+
+#todo-form{
+    margin-top:30px;
+}
+
+#todo-form input{
+    padding: 12px 0 12px 0;
+    width: 70%;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #F33A3A;
+}
+
+#todo-list button{
+    padding: 10px;
+    margin-left: 20px;
+    color: red;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.study-two>span{
+    display: inline-block;
+    padding:40px 0;
+    font-size:2rem;
 }
 
 

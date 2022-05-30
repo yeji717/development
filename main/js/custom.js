@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         let scroll = $(this).scrollTop();
-        console.log(scroll);
+        // console.log(scroll);
 
         $('#navi>li>a').removeClass('on');
 

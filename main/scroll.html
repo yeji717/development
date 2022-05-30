@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/scroll.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+KR:wght@300&family=Roboto:wght@100;300;500&family=Sen:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+KR:wght@300&family=Roboto:wght@100;300;500&family=Poppins:wght@700&family=Sen:wght@700&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
 </head>
@@ -110,7 +110,7 @@
                 <li>
                     <span>04</span>
                     <div class="inner_tit">
-                        <a href="#">UNKNOWN</a>
+                        <a href="#">UNKNOWN(준비중)</a>
                         <a href="#">CODING GUIDE</a>
                     </div>
                 </li>
@@ -118,7 +118,57 @@
         </div>
     </section>
     <section id="s3">
-        <h2>My Work - Animation</h2>
+        <h2>My Work - Study</h2>
+        <div class="flex_box study">
+            <div class="study-one">
+                <ul class="card-btn">
+                    <li class="one">
+                        <a href="#"><span></span></a>
+                    </li>
+                </ul>
+                <div class="card_container">
+                    <div class="front">
+                        <h3>To-Do-List</h3>
+                        <form id="login-form" class="hidden">
+                            <input type="text" placeholder="이름을 입력하세요" required />
+                            <button>button</button>
+                        </form>
+                        <span id="greeting" class="hidden"></span>
+                        <form id="todo-form">
+                            <input type="text" placeholder="Wrtie a To do and Press Enter" required/>
+                        </form>
+                        <ul id="todo-list">
+                        </ul>
+                        <img src="./image/todolist.png" alt="압정모양일러스트">
+                    </div>
+                    <div class="back">
+                        <h3 class="clock"></h3>
+                        <span class="weather"></span>
+                        <div class="location">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <span class="area"></span><br>
+                            <span class="temperature"></span>
+                        </div>
+                        <ul class="weather-img">
+                            <li class="clouds">
+                                <img src="./image/cloudy.png" alt="cloudyimg">
+                            </li>
+                            <li class="clear">
+                                <img src="./image/sun.png" alt="sunimg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="study-two">
+                <span>React Study</span>
+                <div class="card_container">
+                    <div class="front">
+                        <h3>노마드코더 'ReactJS로 영화<br>웹 서비스 만들기' 준비중</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="s4">
         <h2>About Me</h2>
@@ -196,6 +246,10 @@
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./todo.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/weather.js"></script>
 </body>
 
 </html>
