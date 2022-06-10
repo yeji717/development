@@ -611,7 +611,8 @@ section:nth-of-type(odd) h2 {
 
 #login-form input{
     border-radius: 20px 0 0 20px;
-    padding: 12px 20px;
+    padding: 1vw;
+    font-size:0.5rem;
     border: none;
     background: #d9d9d9;
 }
@@ -619,7 +620,8 @@ section:nth-of-type(odd) h2 {
 #login-form button{
     border-radius: 0 20px 20px 0;
     background: #B4C0EB;
-    padding: 12px 20px;
+    padding: 1vw;
+    font-size:0.5rem;
     margin-left: -4px;
 }
 
@@ -1325,6 +1327,12 @@ footer {
 
     .flex_box{
         height:calc(100vh - 35.6px);
+        flex-direction:column;
+    }
+
+    .card_container{
+        width:300px;
+        height:45vw;
     }
 
     .work_list li .inner_tit a:nth-of-type(1){
